@@ -1,0 +1,366 @@
+:root {
+  --font-size: 16px;
+  --primary-color: #e67e22;
+  --primary-dark: #d35400;
+  --text-color: #333;
+  --light-bg: #f9f9f9;
+  --white: #fff;
+  --shadow: 0 0.3rem 0.9rem rgba(0, 0, 0, 0.1);
+  --transform: scale(1.1);
+  --transition: all 0.3s ease;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.4;
+}
+
+body {
+  font-family: "inter", sans-serif;
+  color: #333;
+  font-size: 1.8rem;
+  word-spacing: 1.5;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+}
+
+/* HEADER */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 10rem;
+  font-weight: 700;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--light-bg);
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 2.8rem;
+  gap: 1rem;
+}
+
+.h-j {
+  color: #e67e22;
+}
+
+.logo-img {
+  border-radius: 50%;
+  border: solid 2px #d35400;
+}
+
+/* HERO */
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 5rem 0rem 5rem;
+  color: #fff;
+  gap: 5rem;
+}
+
+.hero-heading {
+  margin-bottom: 5rem;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.hero-section {
+  background-image: url(img/restaurant2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-description {
+  font-weight: 500;
+  font-size: 2rem;
+  text-shadow: 0 0.1rem 0.3rem #333;
+}
+
+.hero-img {
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.658);
+}
+
+.hero-img:hover {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.658);
+  transform: scale(1.01);
+}
+
+.hero-btn {
+  display: flex;
+  gap: 5rem;
+  margin-top: 3rem;
+}
+
+/* RE-USABLE */
+
+/* nav */
+a:link,
+a:visited {
+  text-decoration: none;
+  color: var(--primary-color);
+  margin-right: 3rem;
+  transition: text 0.3s, transform 0.3s;
+}
+
+a:hover,
+a:active {
+  color: var(--primary-dark);
+  transform: var(--transform);
+}
+
+a:last-child {
+  margin: 0;
+}
+
+.btn:hover {
+  box-shadow: var(--shadow);
+  transform: var(--transform);
+}
+
+.btn {
+  border-radius: 30px;
+  color: var(--white);
+  background-color: var(--primary-color);
+  font-weight: 600;
+  padding: 1rem;
+  text-shadow: none;
+  text-decoration: none;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.btn-full:link,
+.btn-full:visited {
+  color: var(--white);
+
+  background-color: var(--primary-color);
+}
+.btn-low:link,
+.btn-low:visited {
+  background-color: var(--light-bg);
+  color: var(--primary-color);
+}
+
+.btn-full:hover,
+.btn-full:active {
+  background-color: var(--primary-dark);
+}
+
+.btn-low:hover,
+.btn-low:active {
+  background-color: #e0e0e0;
+}
+/* ---featured-section---- */
+
+.featured-section {
+  background-color: #e9e9e9;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+}
+
+featured-section h2 {
+  margin: 0;
+  padding-bottom: 2rem;
+}
+
+.teatured-card {
+  box-shadow: var(--shadow);
+  max-width: 30rem;
+  border-radius: 10px;
+  padding: 5rem;
+  background-color: #f9f9f9;
+  margin-left: 7rem;
+}
+
+.featured-description {
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+  text-align: center;
+  font-size: 2rem;
+  font-style: italic;
+}
+
+.heading {
+  text-align: center;
+  color: var(--primary-color);
+  padding: 3rem 0;
+  padding-top: 10rem;
+  background-color: #e9e9e9;
+}
+
+.featured-btn {
+  padding: 1rem;
+  text-align: center;
+  background-color: var(--primary-color);
+  border-radius: 30px;
+  box-shadow: var(--shadow);
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: var(--white);
+  border: none;
+  transition: all 0.3s ease-in-out, transform o.3s ease-in-out;
+}
+
+.featured-btn:hover {
+  transform: var(--transform);
+  box-shadow: var(--shadow);
+  background-color: var(--primary-dark);
+}
+
+.featured-img {
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+
+/* ---menu section--- */
+
+.menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1rem;
+  box-shadow: var(--shadow);
+  padding-top: 1rem;
+}
+
+.menu-card:hover {
+  box-shadow: var(--shadow);
+  transform: scale(1.02);
+}
+
+.meal {
+  font-weight: bold;
+  text-align: center;
+  color: #e67e22;
+  margin: 1rem 0;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.menu p:last-child {
+  margin-top: 3rem;
+  font-size: 2rem;
+}
+/* GALLERY */
+
+.gallery {
+  display: flex;
+  padding: 3rem;
+  border-radius: 10px;
+  gap: 3rem;
+  background-color: #e9e9e9;
+}
+.gallery-img:hover {
+  box-shadow: var(--shadow);
+  transform: scale(1.1);
+}
+
+.gallery-section h2 {
+  margin: 0;
+}
+
+.gallery-img {
+  padding-left: 3rem;
+  transition: box-shadow o.3s ease, transform 0.3s ease;
+  /* background-color: var(--light-bg); */
+}
+
+/* ---ABOUT---- */
+
+.about {
+  background-color: var(--light-bg);
+  margin-top: 2rem;
+  padding-top: 9rem;
+}
+
+h2 {
+  text-align: center;
+  color: #e67e22;
+  font-size: 2.4rem;
+  margin: 4rem 0;
+}
+
+.section-about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 9rem;
+  gap: 2rem;
+}
+
+h3 {
+  margin-bottom: 2rem;
+  font-weight: bold;
+  font-size: 2.2rem;
+}
+
+.section-about p {
+  line-height: 1.7;
+  word-spacing: 1.7;
+}
+
+.section-about.btn {
+  background-color: #e0e0e0;
+}
+
+.our {
+  color: #e67e22;
+  font-size: 2.6rem;
+}
+
+/* --CONTACTS-- */
+
+.Touch {
+  color: var(--primary-color);
+  font-size: 2.2rem;
+}
+
+li {
+  margin-bottom: 2rem;
+  list-style: none;
+}
+
+.contact-heading {
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+}
+
+.section-contact {
+  padding-left: 9rem;
+  background-color: #e9e9e9;
+  padding-top: 8rem;
+}
+
+nav {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+}
