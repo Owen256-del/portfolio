@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lan="en">
+<html lang="en">
   <head>
-    <title>My personal portifolio</title>
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>H&J RESTAURANT</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,79 +13,389 @@
     <link href="style.css" rel="stylesheet" />
   </head>
   <body>
-    <a href="#work">Go to work</a>
-    <article class="author">
-      <h1>MY PORTIFOLIO</h1>
-      <p class="first-p">Hello world,welcome to my portifolio website!</p>
-      <div class="grid">
+    <header class="header">
+      <div class="logo">
         <img
-          src="img/IMG-20240930-WA0004.jpg"
-          alt="programmer on screen"
-          height="360PX"
-          width="300PX"
-          class="img-1"
+          src="img/logo.jpg"
+          alt="H&J LOGO"
+          width="50px"
+          height="50px"
+          class="logo-img"
         />
-        <div>
-          <p class="p">
-            Hi, i'm <strong>Mukway Owen</strong>, a professional web developer
-            and designer with love and persion for the industry of web
-            development.
-          </p>
-          <p class="p">
-            I Persued my Bachelor's degree in Web Development and mobile
-            Application at University of Djelfa in ALGERIA.
-          </p>
-          <p><blockquote>I am basically good at three languages and that is;</blockquote></p>
-          <div>
-            <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="lang-icon">
-              <path stroke-linecap="round" stroke-linejoin="round" d="m10.5 21 5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 0 1 6-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 0 1-3.827-5.802" />
-            </svg>
-            English</div>
-            <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="lang-icon">
-  <path stroke-linecap="round" stroke-linejoin="round" d="m10.5 21 5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 0 1 6-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 0 1-3.827-5.802" />
-</svg>
-french</div>
-            <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="lang-icon">
-  <path stroke-linecap="round" stroke-linejoin="round" d="m10.5 21 5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 0 1 6-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 0 1-3.827-5.802" />
-</svg>
-Arabic</div>
+        <p><span class="h-j">H&J </span>Restaurant</p>
+      </div>
+      <nav>
+        <div class="icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#d35400"
+          >
+            <path
+              d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"
+            />
+          </svg>
+          <a href="#home">Home</a>
+        </div>
+        <div class="icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#d35400"
+          >
+            <path
+              d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+            />
+          </svg>
+          <a href="#menu">Menu</a>
+        </div>
+        <div class="icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#d35400"
+          >
+            <path
+              d="M440-560q33 0 56.5-23.5T520-640q0-33-23.5-56.5T440-720q-33 0-56.5 23.5T360-640q0 33 23.5 56.5T440-560Zm0 160q45 0 84.5-19t68.5-54q-35-23-73.5-35T440-520q-41 0-79.5 12T287-473q29 35 68.5 54t84.5 19Zm384 280L636-308q-41 32-90.5 50T440-240q-134 0-227-93t-93-227q0-134 93-227t227-93q134 0 227 93t93 227q0 56-18 105.5T692-364l188 188-56 56ZM440-320q100 0 170-70t70-170q0-100-70-170t-170-70q-100 0-170 70t-70 170q0 100 70 170t170 70Zm0-240Z"
+            />
+          </svg>
+          <a href="#about">About</a>
+        </div>
+        <div class="icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#d35400"
+          >
+            <path
+              d="M360-320q-17 0-28.5-11.5T320-360v-80q17 0 28.5-11.5T360-480q0-17-11.5-28.5T320-520v-80q0-17 11.5-28.5T360-640h240q17 0 28.5 11.5T640-600v80q-17 0-28.5 11.5T600-480q0 17 11.5 28.5T640-440v80q0 17-11.5 28.5T600-320H360Zm120-60q8 0 14-6t6-14q0-8-6-14t-14-6q-8 0-14 6t-6 14q0 8 6 14t14 6Zm0-80q8 0 14-6t6-14q0-8-6-14t-14-6q-8 0-14 6t-6 14q0 8 6 14t14 6Zm0-80q8 0 14-6t6-14q0-8-6-14t-14-6q-8 0-14 6t-6 14q0 8 6 14t14 6ZM280-40q-33 0-56.5-23.5T200-120v-720q0-33 23.5-56.5T280-920h400q33 0 56.5 23.5T760-840v720q0 33-23.5 56.5T680-40H280Zm0-120v40h400v-40H280Zm0-80h400v-480H280v480Zm0-560h400v-40H280v40Zm0 0v-40 40Zm0 640v40-40Z"
+            />
+          </svg>
+          <a href="reservation.html">Reservations</a>
+        </div>
+        <div class="icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#d35400"
+          >
+            <path
+              d="M480-40q-33 0-56.5-23.5T400-120q0-33 23.5-56.5T480-200q33 0 56.5 23.5T560-120q0 33-23.5 56.5T480-40ZM240-760q-33 0-56.5-23.5T160-840q0-33 23.5-56.5T240-920q33 0 56.5 23.5T320-840q0 33-23.5 56.5T240-760Zm0 240q-33 0-56.5-23.5T160-600q0-33 23.5-56.5T240-680q33 0 56.5 23.5T320-600q0 33-23.5 56.5T240-520Zm0 240q-33 0-56.5-23.5T160-360q0-33 23.5-56.5T240-440q33 0 56.5 23.5T320-360q0 33-23.5 56.5T240-280Zm480-480q-33 0-56.5-23.5T640-840q0-33 23.5-56.5T720-920q33 0 56.5 23.5T800-840q0 33-23.5 56.5T720-760ZM480-280q-33 0-56.5-23.5T400-360q0-33 23.5-56.5T480-440q33 0 56.5 23.5T560-360q0 33-23.5 56.5T480-280Zm240 0q-33 0-56.5-23.5T640-360q0-33 23.5-56.5T720-440q33 0 56.5 23.5T800-360q0 33-23.5 56.5T720-280Zm0-240q-33 0-56.5-23.5T640-600q0-33 23.5-56.5T720-680q33 0 56.5 23.5T800-600q0 33-23.5 56.5T720-520Zm-240 0q-33 0-56.5-23.5T400-600q0-33 23.5-56.5T480-680q33 0 56.5 23.5T560-600q0 33-23.5 56.5T480-520Zm0-240q-33 0-56.5-23.5T400-840q0-33 23.5-56.5T480-920q33 0 56.5 23.5T560-840q0 33-23.5 56.5T480-760Z"
+            />
+          </svg>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero-section" id="home">
+        <div class="hero">
+          <div class="hero-description">
+            <h1 class="hero-heading">
+              Indulge in the Flavors of H & J Restaurant
+            </h1>
+            <p>
+              Experience the perfect blend of taste, quality, and atmosphere
+            </p>
+            <div class="hero-btn">
+              <a href="#menu" class="btn btn-full">Explore Our Menu</a>
+              <a href="reservation.html" class="btn btn-low"
+                >Make a Reservation</a
+              >
+            </div>
+          </div>
+          <div class="hero-img">
+            <img
+              src="img/hero-img.jpg"
+              alt="hero-image"
+              width="600px"
+              height="600px"
+              class="hero-img"
+            />
           </div>
         </div>
-      </div>
-
-      <p class="p">
-        I am a highly motivated,experienced,skilled and more especially a
-        atalented web developer and designer with a few years in field but alot
-        of skills and experince.
-      </p>
-      <p class="first-p"><blockquote>I am skilled in;</blockquote> </p>
-      <div class="skills">
-        <img
-          src="img/images (3).jpeg"
-          alt="screen of my codes"
-          width="300px"
-          height="300px"
-        />
-        <ul>
-          <li>Web development</li>
-          <li>Web designing</li>
-          <li>Gaming</li>
-          <li>App development</li>
-          <li>AI deployment and use</li>
-          <li>HTML 5</li>
-          <li>Machine Language(ML)</li>
-        </ul>
-      </div>
-      <footer>
-        <p class="first-p" id="work">
-          Explore my work and learn more about my my skills and experience
-          through;
-        </p>
-        <nav>
-          <a href="project.html" target="_blank">Projects&rAarr;</a>
-          <a href="portifolio.html">&lAarr;Home</a>
-        </nav>
-      </footer>
-    </article>
+      </section>
+      <featured-section>
+        <h2 class="heading">What Sets Us Apart</h2>
+        <div class="featured-section">
+          <span class="teatured-card">
+            <img
+              src="img/chicken.jpg"
+              alt="dish"
+              width="200px"
+              height="200px"
+              class="featured-img"
+            />
+            <div class="featured-description">
+              <p>This is meal is rich in proteins and affordable</p>
+              <p>10$</p>
+            </div>
+            <button href="#" class="featured-btn">Learn More</button>
+          </span>
+          <span class="teatured-card">
+            <img
+              src="img/salads1.jpg"
+              alt="dish"
+              width="200px"
+              height="200px"
+              class="featured-img"
+            />
+            <div class="featured-description">
+              <p>This is meal is rich in proteins and affordable</p>
+              <p>10$</p>
+            </div>
+            <button href="#" class="featured-btn">Learn More</button>
+          </span>
+          <span class="teatured-card">
+            <img
+              src="img/bean3.jpg"
+              alt="dish"
+              width="200px"
+              height="200px"
+              class="featured-img"
+            />
+            <div class="featured-description">
+              <p>This is meal is rich in proteins and affordable</p>
+              <p>10$</p>
+            </div>
+            <button href="#" class="featured-btn">Learn More</button>
+          </span>
+        </div>
+      </featured-section>
+      <section class="menu-section">
+        <h1 id="menu" class="heading">Our Delicious Menu</h1>
+        <div class="menu">
+          <div class="teatured-card menu-card">
+            <img
+              src="img/appetizer 1.avif"
+              alt="appetizer"
+              width="250px"
+              height="250px"
+              class="featured-img"
+            />
+            <p class="meal">APPETIZERS</p>
+            <p>Start your meal with our mouth-watering appetizers</p>
+            <p><strong>From 20$</strong></p>
+          </div>
+          <div class="teatured-card menu-card">
+            <img
+              src="img/drinks 3.jpg"
+              alt="appetizer"
+              width="250px"
+              height="250px"
+              class="featured-img"
+            />
+            <p class="meal">DRINKS</p>
+            <p>Quench your thirst with our selection of drinks</p>
+            <p><strong>From 10$</strong></p>
+          </div>
+          <div class="teatured-card menu-card">
+            <img
+              src="img/chicken and rice.avif"
+              alt="appetizer"
+              width="250px"
+              height="250px"
+              class="featured-img"
+            />
+            <p class="meal">LUSANIA</p>
+            <p>
+              Enjoy our magical Lusania which leaves all family and friends
+              happy
+            </p>
+            <p><strong>From 30$</strong></p>
+          </div>
+          <div class="teatured-card menu-card">
+            <img
+              src="img/main food.avif"
+              alt="appetizer"
+              width="250px"
+              height="250px"
+              class="featured-img"
+            />
+            <p class="meal">ENTREES</p>
+            <p>Savor our signature entrees, crafted with love and care</p>
+            <p><strong>From 40$</strong></p>
+          </div>
+          <div class="teatured-card menu-card">
+            <img
+              src="img/star mael.jpg"
+              alt="appetizer"
+              width="250px"
+              height="250px"
+              class="featured-img"
+            />
+            <p class="meal">APPETIZERS</p>
+            <p>Start your meal with our mouth-watering appetizers</p>
+            <p><strong>From 20$</strong></p>
+          </div>
+          <div class="teatured-card menu-card">
+            <img
+              src="img/signature meal.jpg"
+              alt="appetizer"
+              width="250px"
+              height="250px"
+              class="featured-img"
+            />
+            <p class="meal">APPETIZERS</p>
+            <p>Start your meal with our mouth-watering appetizers</p>
+            <p><strong>From 20$</strong></p>
+          </div>
+        </div>
+      </section>
+      <section class="gallery-section">
+        <h2 class="heading">Our Gallerey</h2>
+        <div class="gallery">
+          <div class="gallery-img">
+            <img
+              src="img/appetizer 2.avif"
+              alt="appetizer"
+              width="250px"
+              height="250px"
+              class="featured-img gallery"
+            />
+          </div>
+          <div class="gallery-img">
+            <img
+              src="img/drinks 1.jpg"
+              alt="appetizer"
+              width="250px"
+              height="250px"
+              class="featured-img gallery"
+            />
+          </div>
+          <div class="gallery-img">
+            <img
+              src="img/appetizer 1.avif"
+              alt="appetizer"
+              width="250px"
+              height="250px"
+              class="featured-img gallery"
+            />
+          </div>
+          <div class="gallery-img">
+            <img
+              src="img/meal2.jpg"
+              alt="appetizer"
+              width="250px"
+              height="250px"
+              class="featured-img gallery"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <h2>ABOUT US</h2>
+        <div class="section-about">
+          <div>
+            <h3><span class="our">Our Story</span> : A Passion for Foody</h3>
+            <p>
+              Welcome to <strong>H&J</strong> Restaurant, a culinary gem founded
+              by the visionary <strong>Miss Nankabirwa Bridget</strong> in 2024.
+              With a passion for delivering exceptional dining experiences,
+              Bridget embarked on a journey to create a restaurant that would
+              bring people together through delicious food and warm hospitality.
+            </p>
+            <p>
+              Since its inception, H&J Restaurant has become a beloved
+              destination for foodies and families alike, serving up a diverse
+              menu that blends traditional flavors with modern twists. From
+              hearty breakfasts to indulgent dinners, every meal at H&J
+              Restaurant is a testament to Bridget's commitment to quality,
+              freshness, and community.
+            </p>
+            <p>
+              <em>
+                Join us at H&J Restaurant and taste the difference that passion,
+                dedication, and a love for good food can make!</em
+              >
+            </p>
+            <a href="reservation.html" class="btn btn-full"
+              >Make reservations</a
+            >
+          </div>
+          <img
+            src="img/restaurant1.jpg"
+            alt="restaurant2"
+            height="400px"
+            width="700px"
+          />
+        </div>
+      </section>
+      <section class="section-contact" id="contact">
+        <h2>CONTACT US</h2>
+        <div>
+          <h1 class="contact-heading">Get in Touch</h1>
+          <ul>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#333"
+              >
+                <path
+                  d="m176-120-56-56 301-302-181-45 198-123-17-234 179 151 216-88-87 217 151 178-234-16-124 198-45-181-301 301Zm24-520-80-80 80-80 80 80-80 80Zm355 197 48-79 93 7-60-71 35-86-86 35-71-59 7 92-79 49 90 22 23 90Zm165 323-80-80 80-80 80 80-80 80ZM569-570Z"
+                />
+              </svg>
+              <strong class="Touch">Address:</strong> We are located in Mengo
+              plot,312B along Sentema Road.
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#333"
+              >
+                <path
+                  d="m176-120-56-56 301-302-181-45 198-123-17-234 179 151 216-88-87 217 151 178-234-16-124 198-45-181-301 301Zm24-520-80-80 80-80 80 80-80 80Zm355 197 48-79 93 7-60-71 35-86-86 35-71-59 7 92-79 49 90 22 23 90Zm165 323-80-80 80-80 80 80-80 80ZM569-570Z"
+                />
+              </svg>
+              <strong class="Touch">Phone number:</strong> +256-742-2485-79
+              <strong>OR</strong> +256-768-2070-10
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#333"
+              >
+                <path
+                  d="m176-120-56-56 301-302-181-45 198-123-17-234 179 151 216-88-87 217 151 178-234-16-124 198-45-181-301 301Zm24-520-80-80 80-80 80 80-80 80Zm355 197 48-79 93 7-60-71 35-86-86 35-71-59 7 92-79 49 90 22 23 90Zm165 323-80-80 80-80 80 80-80 80ZM569-570Z"
+                />
+              </svg>
+              <strong class="Touch">E-mail address:</strong>
+              nankabirwabridget256@gmail.com
+            </li>
+          </ul>
+          <p>
+            <!-- <iframe
+              src="(https://maps.app.goo.gl/oeF8ATyyqQ4oS7SSA)"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe> -->
+          </p>
+          <p class="Touch">Links to our social media profiles</p>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
